@@ -1,10 +1,3 @@
-@Library('jenkins-shared-libraries')
-import resolveDeploymentTarget
-import slackNotify
-import readPackage
-import determineBuildId
-import groovy.json.JsonSlurper
-
 node {
     stage('Checkout') {
         checkout scm
